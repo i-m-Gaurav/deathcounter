@@ -75,7 +75,7 @@ const Result = () => {
     <div className= "flex justify-center flex-col items-center">
 
     <div className="font-bold mb-5 text-2xl mt-5">{formattedTime}</div>
-    <h1 className="text-xl">&quot;Don&apos;t worry, This too shall pass!&quot;</h1>
+    <h1 className="text-xl">This too shall pass!</h1>
 
     </div>
           
