@@ -20,7 +20,7 @@ const Age = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center p-24">
       <form onSubmit={handleSubmit} className="flex flex-col items-center">
-        <label htmlFor="age" className="text-2xl">How long do you think you will live?</label>
+        <label htmlFor="age" className="text-2xl text-center">How long do you think you will live?</label>
         <input
           type="number"
           id="age"

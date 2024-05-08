@@ -19,7 +19,7 @@ const Dob = () => {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center p-24">
       <form onSubmit={handleSubmit} className="flex flex-col items-center">
-        <label htmlFor="dob" className="text-2xl">
+        <label htmlFor="dob" className="text-2xl text-center">
           Enter your date of birth!
         </label>
         <input
