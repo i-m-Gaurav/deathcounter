@@ -42,7 +42,7 @@ const Result = () => {
         const months = Math.floor((days / 365) / 30);
         const remainingDays = days % 30;
 
-        setFormattedTime(`${years} years ; ${months} months : ${remainingDays} days : ${hours} hours : ${minutes} minutes : ${seconds} seconds`);
+        setFormattedTime(`${years} years : ${months} months : ${remainingDays} days : ${hours} hours : ${minutes} minutes : ${seconds} seconds`);
 
         return newSeconds;
       });
