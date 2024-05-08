@@ -1,4 +1,3 @@
-
 'use client';
 import React, { useEffect, useState } from 'react';
 
@@ -58,15 +57,8 @@ const Result = () => {
   // Create week divs with accurate colors
   const weeksDivs = Array.from({ length: totalWeeks }, (_, index) => (
     <div
-      className="rounded"
+      className={`sm:rounded w-2 h-2 md:w-4 rounded md:h-4 m-1 ${index < livedWeeks ? 'bg-red-500' : 'bg-green-500'}`}
       key={index}
-      style={{
-        width: '15px',
-        height: '15px',
-        border: '1px solid white',
-        margin: '5px',
-        backgroundColor: index < livedWeeks ? 'red' : 'green',
-      }}
     />
   ));
 
@@ -74,13 +66,13 @@ const Result = () => {
     <>
     <div className= "flex justify-center flex-col items-center">
 
-    <div className="font-bold mb-5 text-2xl mt-5">{formattedTime}</div>
-    <h1 className="text-xl">This too shall pass!</h1>
+    <div className="sm:font-bold mb-5 text-sm mt-5 md:text-2xl items-center text-center">{formattedTime}</div>
+    <h1 className="text-lg">This too shall pass!</h1>
 
     </div>
           
 
-    <div className="flex flex-wrap min-h-screen items-center justify-center p-10 relative">
+    <div className="flex flex-wrap min-h-screen items-center justify-center p-2 relative">
       {weeksDivs}
 
       <h1>Huh, You got some time, up there.</h1>
